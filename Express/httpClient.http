@@ -1,0 +1,25 @@
+### GET /
+GET localhost:3000
+
+### POST / with body as json
+POST localhost:3000
+Content-Type: application/json
+
+{
+  "username": "minsoeaung",
+  "payloadType": "application/json"
+}
+
+### POST / with body as parameters
+POST localhost:3000
+Content-Type: application/x-www-form-urlencoded
+
+username=minsoeaung&age=21&payloadType=x-www-form-urlencoded
+
+### POST / with body as form-data
+POST localhost:3000
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; username="minsoeaung"; payloadType="form-data"
+Content-Type: text/plain
