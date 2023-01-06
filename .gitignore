@@ -1,2 +1,5 @@
 /Express/.env
 /node_modules
+/TextOnImage/output
+/TextOnImage/video1to50
+/TextOnImage/thumbs

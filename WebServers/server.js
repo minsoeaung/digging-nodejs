@@ -2,6 +2,7 @@ const http = require('http')
 const fs = require("fs");
 const {createGzip} = require('zlib');
 const {pipeline} = require('stream');
+import http from ''
 
 const gzip = createGzip();
 
@@ -11,7 +12,7 @@ const server = http.createServer((req, res) => {
         'Content-Encoding': 'gzip'
     })
     const source = fs.createReadStream('./pic.jpg');
-    pipeline(source, gzip, res, (source) => {   
+    pipeline(source, gzip, res, (source) => {
         if (source) {
             console.error('An error occurred:', source);
         }
